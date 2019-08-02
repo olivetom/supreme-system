@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RootNamespace>MS_01</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Miscelaneous\" />
+    <Folder Include="ProCSharp7\" />
+    <Folder Include="AMZN\" />
+    <Folder Include="Standford_Algorithms\" />
+    <Folder Include="CourseraAlgorithms\VariousAlgorithms\" />
+    <Folder Include="CourseraAlgorithms\Week1\" />
+    <Folder Include="CourseraAlgorithms\Week2\" />
+    <Folder Include="CourseraAlgorithms\Week3\" />
+    <Folder Include="LeetCode\Cormen\" />
+    <Folder Include="LeetCode\Crack\" />
+    <Folder Include="LeetCode\GeeksForGeeks\" />
+    <Folder Include="LeetCode\OO\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Pangram\README.tt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Pangram\README.md">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>README.cs</LastGenOutput>
+    </None>
+    <None Update="Miscelaneous\README.md">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>README.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Miscelaneous\README.cs" />
+  </ItemGroup>
+</Project>
